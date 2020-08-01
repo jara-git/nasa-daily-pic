@@ -7,8 +7,10 @@ import './App.css';
 function App() {
   return (
     <div>
-      <Route component={Home} path="/" exact/>
-      <Route component={NasaPic} path="/nasa-picture" />
+      <Router>
+        <Route component={Home} path="/" exact/>
+        <Route component={NasaPic} path="/nasa-picture" />
+      </Router>
     </div>
   );
 }
