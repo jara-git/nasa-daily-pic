@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
   return (
-    <div>
+    <div className = 'App'>
       <Router>
         <Route component={Home} path="/" exact/>
         <Route component={NasaPic} path="/nasa-picture" />

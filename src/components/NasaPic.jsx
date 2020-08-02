@@ -24,10 +24,11 @@ const NasaPic = () => {
     return 'picture not available right now';
 
     return (
-        <div>
-            <Navbar />
+        <>
+        <Navbar />
+        <div className = 'nasaPic__photo'>
             {photoData.media_type === 'image' ? (
-                <img
+                <img className = 'pic'
                 src={photoData.url}
                 alt={photoData.title}
                 />
@@ -43,12 +44,13 @@ const NasaPic = () => {
             )}
             
             <div>
-                <h1>{photoData.title}</h1>
-                <p>{photoData.date}</p>
-                <p>{photoData.explanation}</p>
+                <h1 className ='title'>{photoData.title}</h1>
+                <p className = 'date'>{photoData.date}</p>
+                <p className ='explanation'>{photoData.explanation}</p>
             </div>
 
         </div>
+        </>
     );
 };
 

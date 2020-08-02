@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
-        <div>
-            <Link to='nasa-picture'>
+        <div className = 'Home'>
+            <Link  className= 'home__link' to='nasa-picture'>
             Looking At The Stars Is A Look Back In Time!
             </Link>
             <p>
