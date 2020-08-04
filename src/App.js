@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./components/Home";
 import NasaPic from "./components/NasaPic";
-import './App.css';
+import './App.scss';
 
 function App() {
   return (

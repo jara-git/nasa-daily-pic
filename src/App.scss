@@ -1,7 +1,7 @@
-$color-blue: #124f7e;
+$color-blue: #090979;
 $color-grey: #aba8a8;
 $color-Dgrey: #323131;
-$color-HDgrey: #1c1c1c;
+$color-HDgrey: #0b0a30;
 
 
 .App {
@@ -15,15 +15,14 @@ body {
   color: $color-grey;
   line-height: 1.7;
   font-size: 19px;
-  background-color: $color-Dgrey;
-  background-image: url('https://cdn.pixabay.com/photo/2016/06/05/07/59/stars-1436950_1280.jpg');
+  background: rgb(235, 235, 235);
   font-family: 'Oswald', sans-serif;
 }
 
 /* Navbar */
 
 .Navbar {
-  background-color: $color-HDgrey;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   font-family: 'Oswald', sans-serif;
@@ -50,9 +49,15 @@ body {
     height: 100vh;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    .home__description {
+      margin: 4rem 2rem 2rem;
+      font-weight: 300;
+    }
 
     .home__link {
-      font-size: 40px;
+      font-size: 20px;
       background: $color-blue;
       display: inline-block;
       padding: 40px 80px;
@@ -63,8 +68,9 @@ body {
       text-transform: uppercase;
       
       &:hover {
-        border-radius: 5px;
+        border-radius: 3px;
         background:$color-blue;
+        transform: scale(0.8); 
       }
     }
   
